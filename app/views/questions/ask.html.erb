@@ -1,5 +1,10 @@
-<form action="/answer" data-turbo="false">
-  <label for="question">Ask the coach!</label>
-  <input type="text" name="question">
-  <input type="submit" value="Ask!">
-</form>
+<div class="container">
+  <h1 class="big my-4">Stupid Coach</h1>
+  <h3 class="py-3">Ask the coach a question</h3>
+  <form action="/answer" data-turbo="false">
+    <div class="input-group input-group-lg">
+      <input class="form-control input-lg" type="text" name="question">
+      <input class="btn btn-primary" type="submit" value="Ask!">
+    </div>
+  </form>
+</div>

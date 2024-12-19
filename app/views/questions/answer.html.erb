@@ -1,9 +1,18 @@
-<h1>Stupid Coaching</h1>
+<div class="container">
 
-<h2><%= @user_input %></h2>
-<h2>- You</h2>
+  <h1 class="mb-5">Stupid Coaching</h1>
+    <div id="your-answer" class="border-start mb-4 px-3">
+      <h2 class="mb-4"><%= @user_input %></h2>
+      <h2><i>- You</i></h2>
+    </div>
 
-<h2><%= @answer %></h2>
-<h2>- Your coach</h2>
 
-<%= link_to "Ask a new question", ask_path %>
+
+    <div id="couch-answer" class="border-start mb-4 px-3 bg-warning">
+      <h2 class="mb-4"><%= @answer %></h2>
+      <h2><i>- Your coach</i></h2>
+    </div>
+
+
+  <%= link_to "Ask a new question", root_path, class: "text-decoration-none" %>
+</div>
